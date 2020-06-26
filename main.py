@@ -41,7 +41,7 @@ class CrosswordResolver:
                                             self.used_letters_grid[x + letter_pos[0]][y + letter_pos[1]] = 1
 
         end_letters = self.give_remaining_letters()
-        print(end_letters)
+        print(" ".join(i for i in end_letters))
 
     def give_word_direction(self, x, y, next_letter):
         directions = []
